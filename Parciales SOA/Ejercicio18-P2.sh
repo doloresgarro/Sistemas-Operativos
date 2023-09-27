@@ -5,22 +5,6 @@ if [ $# -eq 0  ]; then
 	exit 1
 fi
 
-esta_logueado() {
-
-	
-	for i in $(cat /etc/passwd); do 
-		dir=$(echo "$i" | cut -d: f1)
-		if [   ]; then
-		
-	fi
-#!/bin/bash
-
-if [ $# -eq 0  ]; then
-	echo "Ingrese al menos un parámetro"
-	exit 1
-fi
-
-
 
 esta_logueado() {
 	if [ $(who | cut -d" " -f1 | grep -w $1 | wc -l) -ne 0 ]; then
