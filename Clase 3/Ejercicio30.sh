@@ -18,7 +18,7 @@ for arch in $(find "$PWD" -name "*.sh"); do
 	else
 		echo "No se puedo mover el archivo $arch"
 	fi
-	movidos=$((movidos+1))
+	movidos=$(expr $movidos + 1)
 done
 
 if [ $movidos -eq 0 ]; then
